@@ -23,9 +23,7 @@ services:
       - 8000:8000
     tty: true
   mysql:
-    build:
-      context: .
-      dockerfile: ./db/Dockerfile
+    image: mysql:8.0.16
     container_name: 396gi-db
     environment:
       MYSQL_ROOT_PASSWORD: root
