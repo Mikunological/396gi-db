@@ -19,7 +19,7 @@ services:
     container_name: 396gi-backend
     volumes:
       - ./backend:/app/backend
-    command: reflex -r '\.go$$' -s -- sh -c 'go run /app/backend/go-app/main.go -port=8000'
+    command: reflex -r '\.go$$' -s -- sh -c 'go run /app/backend/go-app/cmd/api/main.go -port=8000'
     ports:
       - 8000:8000
     tty: true
