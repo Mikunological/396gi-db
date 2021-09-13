@@ -29,8 +29,13 @@ $ docker-compose run --rm frontend create-react-app react-app
 
 ### Backend
 
+```
+$ docker-compose run --rm api go mod init go-app
+```
+
 参考記事：
 
 - [Docker で Go の開発環境を構築する - Qiita](https://qiita.com/uji_/items/8c9eda89526abe0ba900)
+- [go の hot reloading には reflex が便利だった - Qiita](https://qiita.com/_mkazutaka/items/fcefea6081c16a383be4)
 
 </details>
